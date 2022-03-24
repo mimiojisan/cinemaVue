@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/c8d7c34335.js" crossorigin="anonymous"></script>
+    <!-- cdn vue -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+    <title>映画検索アプリ（TMDb）</title>
+</head>
+<body>
+    <header id="header"> 
+        <h1 class="ttl">CINEMA VUE.</h1>
+        <ul class="nav">
+            <li class="nav-list">MOVIES</li>
+            <li class="nav-list">CREDITS</li>
+            <li class="nav-list">CATEGORY</li>
+            <li class="nav-list">PERIOD</li>
+        </ul>
+        <form id="form" class="form-box">
+            <input type="text" placeholder="Search" id="search" class="search">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </form>
+        <button id="toggle" class="toggle"><span></span></button>
+        <div id="mask"></div>
+    </header>
+    <div class="bodychild">
+        <ul id="tags" class="tags"></ul>
+        <div id="myNav" class="overlay">
+            <!-- 閉じるボタン -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>          
+            <!-- オーバーレイ -->
+            <div class="overlay-content" id="overlay-content"></div>
+        </div>
+        <div class="bodychild1">
+            <main id="main"></main>
+            <!-- ページ切り替えボタン -->
+            <div class="pagination">
+                <div id="prev" class="page">Prev</div>
+                <div id="current" class="current">1</div>
+                <div id="next" class="page">Next</div>    
+            </div>
+            <!-- 表示リスト -->
+            <div id="headrow">
+                <div class="row">
+                  <h2 class="row_ttl"></h2>
+                  <div class="row_posters"></div>
+                </div>
+              </div>
+            </div>    
+        </div>
+    </div>
+    <!-- <div id="app"></div> -->
+    <script src="js/move.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
