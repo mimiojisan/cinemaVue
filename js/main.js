@@ -293,9 +293,7 @@ function openNav(movie) {
                       <p>OVERVIEW</p>
                       <p>${overview}</p>
                     </div>
-                    <button class="homepage">
-                      <a href=${homepage}>公式サイトへ</a>
-                    </button>
+                    <a href=${homepage} class="homepage">Go To Official Site</a>
                   </div>
                   `
                 content.append(imageEl)
