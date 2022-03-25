@@ -503,7 +503,7 @@ header {
 
 .content,
 .content1,
-.content2  {
+.content2 {
   padding-left: 40px;
 }
 
@@ -515,7 +515,7 @@ header {
 
 .content_ttl {
   font-size: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   padding: 20px 20px 20px 40px;
 }
 
@@ -581,7 +581,7 @@ header {
 }
 
 .image .description .detail p:nth-of-type(2) {
-  font-size: 1rem;;
+  font-size: 1rem;
   margin-top: 5px;
 }
 
@@ -594,11 +594,11 @@ header {
   line-height: 30px;
   padding: 0.5rem 1rem;
   margin-top: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .homepage:hover {
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
   background-color: var(--standard-color);
 }
 
@@ -687,4 +687,10 @@ header {
 .row_posterLarge2:hover {
   transform: scale(1.09);
   opacity: 1;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 0.8rem;
 }
